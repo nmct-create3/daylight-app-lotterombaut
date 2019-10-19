@@ -1,7 +1,50 @@
 /*------------------------------------*\
 #FONTS
 \*------------------------------------*/
+@font-face {
+    font-family: WorkSans-black;
+    src: url(WorkSans-Black.ttf);
+  }
 
+  @font-face {
+    font-family: WorkSans-bold;
+    src: url(WorkSans-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: WorkSans-extrabold;
+    src: url(WorkSans-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: WorkSans-extralight;
+    src: url(WorkSans-ExtraLight.ttf);
+  }
+
+  @font-face {
+    font-family: WorkSans-light;
+    src: url(WorkSans-Light.ttf);
+  }
+
+  @font-face {
+    font-family: WorkSans-Medium;
+    src: url(WorkSans-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: WorkSans-regular;
+    src: url(WorkSans-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: WorkSans-semibold;
+    src: url(WorkSans-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: WorkSans-thin;
+    src: url(WorkSans-Thin.ttf);
+  }
 /*------------------------------------*\
 #Variables
 \*------------------------------------*/
