@@ -3,47 +3,47 @@
 \*------------------------------------*/
 @font-face {
     font-family: WorkSans-black;
-    src: url(WorkSans-Black.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-Black.ttf);
   }
 
   @font-face {
     font-family: WorkSans-bold;
-    src: url(WorkSans-Bold.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-Bold.ttf);
   }
 
   @font-face {
     font-family: WorkSans-extrabold;
-    src: url(WorkSans-ExtraBold.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-ExtraBold.ttf);
   }
 
   @font-face {
     font-family: WorkSans-extralight;
-    src: url(WorkSans-ExtraLight.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-ExtraLight.ttf);
   }
 
   @font-face {
     font-family: WorkSans-light;
-    src: url(WorkSans-Light.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-Light.ttf);
   }
 
   @font-face {
     font-family: WorkSans-Medium;
-    src: url(WorkSans-Medium.ttf);
+    src: url(../fonts/Work_Sans/orkSans-Medium.ttf);
   }
 
   @font-face {
-    font-family: WorkSans-regular;
-    src: url(WorkSans-Regular.ttf);
+    font-family: "WorkSansregular";
+    src: url(../fonts/Work_Sans/WorkSans-Regular.ttf);
   }
 
   @font-face {
     font-family: WorkSans-semibold;
-    src: url(WorkSans-SemiBold.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-SemiBold.ttf);
   }
 
   @font-face {
     font-family: WorkSans-thin;
-    src: url(WorkSans-Thin.ttf);
+    src: url(../fonts/Work_Sans/WorkSans-Thin.ttf);
   }
 /*------------------------------------*\
 #Variables
@@ -51,8 +51,11 @@
 
 :root {
     /* colors */
+    --front-color: #0F3557;
+    --back--color: #CCE7FF;
 
     /* opacity */
+    --opacity-muted: ;
 
     /* transitions */
 }
@@ -70,7 +73,10 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    font-family: Helvetica, arial, sans-serif;
+    background-color: var(--back--color);
+    color: var(--front-color);
+    font-family: "WorkSansregular", Helvetica, arial, sans-serif;
+    font-feature-settings: "zero" 1;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -292,7 +298,9 @@ input::placeholder {
 */
 
 .c-logo {
-
+    display: flex;
+	align-items: center;
+    font-size: 16px;
 }
 
 /*
@@ -302,11 +310,12 @@ input::placeholder {
 */
 
 .c-sun {
-
+    fill: var(--front-color);
+    height: 22px;  
 }
 
 .c-logo .c-sun {
-
+    margin-right: 8px;
 }
 
 /*
@@ -314,7 +323,16 @@ input::placeholder {
     ---
     Main app wrapper
 */
+.c-app{
+    max-width: 400px;
+    padding: 34px;
+    margin: auto;
+}
 
+.c-app__summery{
+    font-size: 28px;
+    line-height: 40px;
+}
 /*
     Component: Horizon
     ---
@@ -329,6 +347,9 @@ input::placeholder {
     Utilities: Mute
     Mute with opacity
 */
+.u-muted{
+    opacity: var(--opacity-muted);
+}
 
 /*------------------------------------*\
 #STATES
